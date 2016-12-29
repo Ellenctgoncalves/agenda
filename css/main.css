@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  background-color: #EDEFF1;
+}
+
+.menu .button title {
+  background-color: black;
+  font-color: white;
+}
+
+.menu {
+  background-color: #0E91CE;
+  height: 65px;
+  width: 100%;
+  box-shadow: 0 0 5px black;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.menu .buttons {
+  float: left;
+  cursor: pointer;
+}
+
+.menu .button {
+  height: 65px;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  color: white;
+}
+
+.menu .button .material-icons {
+
+  line-height: 65px;
+  font-size: 23pt;
+}
+
+.menu .filter {
+  float: right;
+}
+
+.menu .filter .mui-select {
+  margin-right: 20px;
+  float: left;
+
+}
+
+.menu .filter .mui-select select {
+  border-bottom-width: 0;
+  color: white;
+}
+
+.day .header {
+  margin-top: 35px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.day .header .title {
+  font-size: 26px;
+  display: inline-block;
+}
+
+.day .header .title .button {
+  display: inline-block;
+  color: #42ADD9;
+  cursor: pointer;
+}
+
+.day .events {
+  overflow: hidden;
+  width: 98%;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top-width: 0;
+  border-bottom-width: 3px;
+}
+
+.day .event {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.day .event .buttons .button {
+  display: inline-block;
+}
+
+.day .event .hour {
+  flex: 1;
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}
+
+.day .event .deadline {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+}
+
+.day .event .info {
+  flex: 8;
+  margin: auto;
+}
+
+.day .event .info .company {
+  font-size:13px;
+  color: grey;
+}
+
+.day .event .info .title {
+  font-size:16px;
+  color: black;
+  font-weight: bold;
+}
+.day .event .author {
+  flex: 4;
+  line-height: 70px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+}
+
+.day .event .author img {
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.day .event .buttons {
+  flex: 2;
+  margin: auto;
+  text-align: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 25px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext {
+    width: 80px;
+    top: 100%;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.day .event .details {
+  overflow: hidden;
+  height: 0px;
+  transition: 0.5s all;
+}
+
+.day .event {
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.day .event.active {
+  height: 280px;
+}
+
+.day .event.active .details {
+  height: 210px;
+}
+
+.day .event .details table *[align="right"] {
+  border-right: 1px solid #d4d4d4;
+  padding-right: 10px;
+}
