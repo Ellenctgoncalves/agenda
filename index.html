@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Agenda</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link href="//cdn.muicss.com/mui-0.9.7/css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="menu">
+		  <div class="buttons">
+		    <div class="button">
+		      <div class="tooltip">
+		        <i class="material-icons">refresh</i>
+		        <span class="tooltiptext">Hoje</span>
+		      </div>
+		    </div>
+		    <div class="button">
+		      <div class="tooltip">
+		        <i class="material-icons">search</i>
+		        <span class="tooltiptext">Buscar</span>
+		      </div>
+
+		    </div>
+		    <div class="button">
+		      <div class="tooltip">
+		        <i class="material-icons">print</i>
+		        <span class="tooltiptext">Imprimir</span>
+		      </div>
+		    </div>
+		    <div class="button">
+		      <div class="tooltip">
+		        <i class="material-icons">event</i>
+		        <span class="tooltiptext">Calendário</span>
+		      </div>
+		    </div>
+		    <div class="button">
+		      <div class="tooltip">
+		        <i class="material-icons">add</i>
+		        <span class="tooltiptext">Novo</span>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="filter">
+		    <div class="mui-select cities">
+		      <select>
+		        <option>Maceió</option>
+		        <option>Aracaju</option>
+		        <option>Itabaiana</option>
+		        <option>Estância</option>
+		        <option>Propriá</option>
+		      </select>
+		    </div>
+		    <div class="mui-select options">
+		      <select>
+		        <option hidden>Tudo</option>
+		        <option>Meu Departamento</option>
+		        <option>Meus Agendamentos</option>
+		        <option>Como Responsável</option>
+		        <option>Departamento</option>
+		        <option>Colaborador</option>
+		        <option>Atrasados</option>
+		      </select>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="day">
+		  <div class="header">
+		    <div class="title">
+		      HOJE
+		      <div class="button">
+		        <div class="tooltip">
+		          <i class="material-icons">add</i>
+		          <span class="tooltiptext">Novo</span>
+		        </div>
+		      </div>
+		    </div>
+
+		    <div class="description">20 de abril de 2015</div>
+		  </div>
+
+		  <div class="events">
+		    <div class="event">
+		      <div class="hour">12:00</div>
+		      <div class="deadline">HOJE</div>
+		      <div class="info">
+		        <div class="company">Santa Casa de Misericórdia de Maceió</div>
+		        <div class="title">Requerimento de Baixa Complexidade</div>
+		        <div class="details">
+		          <table class="table table-sm">
+		            <tbody>
+		              <tr>
+		                <td scope="row" align="right">ID</td>
+		                <td>5451</td>
+		              </tr>
+		              <tr>
+		                <td scope="row" align="right">PROCESSO</td>
+		                <td>5451</td>
+		              </tr>
+		              <tr>
+		                <td scope="row" align="right">OBJETO</td>
+		                <td>5451</td>
+		              </tr>
+		              <tr>
+		                <td scope="row" align="right">PARTE CONTRÁRIA</td>
+		                <td>5451</td>
+		              </tr>
+		              <tr>
+		                <td scope="row" align="right">INSTÂNCIA ATUAL</td>
+		                <td>13ª Vara Federal de Alagoas</td>
+		              </tr>
+		              <tr>
+		                <td scope="row" align="right">TIPO DE INTIMAÇÃO</td>
+		                <td>Correspondência</td>
+		              </tr>
+		              <tr>
+		                <td scope="row" align="right">DATA DE INTIMAÇÃO</td>
+		                <td>22/06/2015</td>
+		              </tr>
+		            </tbody>
+		          </table>
+		        </div>
+
+		       </div>
+		      <div class="author">
+		        <img src="http://wpapers.ru/wallpapers/Men/7324/TS_Josh-Holloway.jpg" width="50" height="50"/>
+		        James Ford
+		      </div>
+
+		      <div class="buttons">
+		        <div class="button">
+		          <i class="material-icons">folder_open</i>
+		        </div>
+		        <div class="button">
+		          <i class="material-icons">done</i>
+		        </div>
+		        <div class="button">
+		          <i class="material-icons">mode_edit</i>
+		        </div>
+		        <div class="button">
+		          <i class="material-icons">clear</i>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<script src="https://cdn.muicss.com/mui-0.9.7/js/mui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+		$('.day .event').click(function (a) {
+			var event = $(this);
+
+			if (event.hasClass('active')) {
+				event.removeClass('active');
+			} else {
+				event.addClass('active');
+			}
+			});
+		</script>
+	</body>
+</html>
